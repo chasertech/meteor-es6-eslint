@@ -17,6 +17,13 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
+  Meteor.methods({
+    max: function() {
+      var args = Array.prototype.slice.call(arguments);
+      var max =  Math.max.apply(Math, args);
+      return 'The maximum of ' + args.slice(0, -1).join(', ') + ' and ' + args.slice(-1) + ' is ' + max;
+    }
+  });
   Meteor.startup(function () {
     // code to run on server at startup
   });
