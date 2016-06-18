@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "no-var": "warn",
+    "object-shorthand": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-rest-params": "warn",
+    "prefer-spread": "warn",
+    "prefer-template": "warn"
+  },
+  "env": {
+    "es6": true
+  }
+}
